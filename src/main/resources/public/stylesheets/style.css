@@ -1,0 +1,385 @@
+body {
+	background: #434142;
+	color: #315f52;
+	font-family: monospace;
+	font-size: 14px;
+	margin: 0;
+	padding: 0;
+}
+#mapInfo{
+	background-image: url(../image/img3.jpg);
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size:cover;
+
+}
+#map{
+	background-image: url(../image/img2.jpg);
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size:cover;
+
+}
+#header {
+	margin: 0 auto;
+	max-width: 960px;
+}
+#header h1 {
+	font-size: 60px;
+	font-weight: normal;
+	line-height: 50px;
+	margin: 0;
+	padding: 30px 0;
+	text-align: center;
+}
+#header h1 a {
+	color: #ff9933;
+	text-decoration: none;
+  font-family: monospace;
+}
+#header h1 a span {
+	color: #A6B1AB;
+	display: block;
+	font-family: fantasy;
+	font-size: 26px;
+	text-transform: uppercase;
+}
+#body {
+	background: #A6B1AB;
+	margin: 1px auto 0;
+  width: 1051px;
+  height: auto;
+
+	overflow: hidden;
+	padding: 45px 40px 46px;
+}
+
+
+
+
+#body img.figure {
+	display: block;
+	float: right;
+  width: auto;
+  height: 603px;
+	margin: 0;
+	padding: 0;
+}
+#header ul#navigation {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	text-align: center;
+	font-family: monospace;
+}
+#header ul#navigation li {
+	display: inline;
+	line-height: 30px;
+	position: relative;
+}
+#header ul#navigation li a {
+	color: #b6d8cf;
+	font-size: 18px;
+	padding: 0 46px;
+	text-align: center;
+	text-decoration: none;
+	text-transform: uppercase;
+}
+#header ul#navigation li a:hover
+#header ul#navigation li.current ul li a:hover {
+	color: #ff9933;
+}
+#header ul#navigation li.current a {
+	color: #ff9933;
+}
+#body h2 {
+    color: #434142;
+    font-family: monospace;
+    font-size: 50px;
+    font-weight: normal;
+    line-height: 30px;
+    margin: 0;
+    padding: 0 0 44px;
+}
+#body form {
+	margin: 25px auto 0;
+	overflow: hidden;
+	width: 460px;
+}
+#body form label {
+	display: block;
+	padding: 15px 0 0;
+}
+#body form label span {
+    display: block;
+    line-height: 27px;
+    padding: 0 0 5px;
+    font-size: 20px;
+    font-family: monospace;
+    color: #434142;
+}
+#body form label input {
+    background: #d1d3d4;
+    border: 1px solid #d1d3d4;
+    color: #434142;
+    display: block;
+    font-family: monospace;
+    font-size: 20px;
+    height: 46px;
+    line-height: 46px;
+    padding: 0 5px;
+    width: 448px;
+}
+#body form input#submit {
+    background: #434142;
+    border: none;
+    border-radius: 5px;
+    color: #A6B1AB;
+    cursor: pointer;
+    font-family: monospace;
+    font-size: 20px;
+    float: right;
+    height: 30px;
+    margin: 8px 0 0;
+    width: 100px;
+}
+#body form input#reset {
+    background: #434142;
+    border: none;
+    border-radius: 5px;
+    color: #A6B1AB;
+    cursor: pointer;
+    font-family: monospace;
+    font-size: 20px;
+    float: left;;
+    height: 30px;
+    margin: 8px 0 0;
+
+    width: 100px;
+}
+#body form label#signup{
+	font-family: monospace;
+	font-size: 15px;
+	color:#434142;
+}
+
+#mapInfo #body{
+	background: #A6B1AB;
+	margin: 1px auto 0;
+  width: 1051px;
+  height: auto;
+	overflow: hidden;
+	padding: 45px 40px 46px;
+	filter:alpha(opacity=60);
+  /* CSS3 standard */
+  opacity: 0.9;
+	position: static;
+
+}
+
+#map #body{
+	background: rgba(240, 245, 242, 0.08);
+	margin: 1px auto 0;
+  width: 1051px;
+  height: auto;
+	overflow: hidden;
+	padding: 45px 40px 46px;
+	filter:alpha(opacity=60);
+  /* CSS3 standard */
+  opacity: 0.9;
+	position: static;
+
+}
+#body form.mapInfo label textarea {
+	background: #d1d3d4;
+	border: 1px solid #d1d3d4;
+
+	color: #434142;
+	display: block;
+	font-family: monospace;
+	font-size: 10px;
+	height: 250px;
+	line-height: 30px;
+	overflow: auto;
+	padding: 0 5px;
+	resize: none;
+	width: 448px;
+}
+#body form.mapInfo input#ADate {
+    background: #d1d3d4;
+    border: 1px solid #d1d3d4;
+    color: #434142;
+    display: block;
+    font-family: monospace;
+    font-size: 15px;
+    height: 40px;
+    line-height: 46px;
+    padding: 0 5px;
+    width: 150px;
+}
+#body form.mapInfo input#LDate {
+    background: #d1d3d4;
+    border: 1px solid #d1d3d4;
+    color: #434142;
+    display: block;
+    font-family: monospace;
+    font-size: 15px;
+    height: 40px;
+    line-height: 46px;
+    padding: 0 5px;
+    width: 150px;
+}
+#body form.mapInfo input{
+	background: #d1d3d4;
+	border: 1px solid #d1d3d4;
+	color: #434142;
+	display: block;
+	font-family: monospace;
+	font-size: 20px;
+	height: 35px;
+	line-height: 35px;
+	padding: 0 5px;
+	width: 448px;
+
+}
+#body form.mapInfo #Adate{
+	margin: 0 auto 0;
+	overflow: hidden;
+	width: 200px;
+	position: absolute;
+	float: left;
+	position: relative;
+}
+#body form.mapInfo #Ldate{
+	margin: 0 auto 0;
+	overflow: hidden;
+	width: 200px;
+	float: right;
+}
+#body form.mapInfo #diary{
+	margin: 0 auto 0;
+	overflow: hidden;
+	width: 450px;
+	float:left;
+
+}
+#body form.mapInfo #Mood{
+	margin: 0 auto 0;
+	overflow: hidden;
+	width: 450px;
+	float:left;
+
+}
+#body form.mapInfo #Mood label{
+	margin: 0;
+	padding: 0;
+
+}
+#body form.mapInfo #Mood input{
+	width: 30px;
+	float: left;
+
+}
+
+#body form.mapInfo #Mood label.emo1{
+	width: 40px;
+	height: 40px;
+	float:left;
+	background-image: url("../image/emoji1.png");
+	background-size:contain;
+  background-repeat:no-repeat;
+  display:inline-block;
+	padding-left: 0px;
+	padding-right: 20px;
+}
+#body form.mapInfo #Mood label.emo2{
+	width: 40px;
+	height: 40px;
+	float:left;
+	background-image: url("../image/emoji2.png");
+	background-size:contain;
+  background-repeat:no-repeat;
+  display:inline-block;
+	padding-left: 0px;
+	padding-right: 20px;
+}
+#body form.mapInfo #Mood label.emo3{
+	width: 40px;
+	height: 40px;
+	float:left;
+	background-image: url("../image/emoji3.png");
+	background-size:contain;
+  background-repeat:no-repeat;
+  display:inline-block;
+	padding-left: 0px;
+	padding-right: 20px;
+}
+#body form.mapInfo #Mood label.emo4{
+	width: 40px;
+	height: 40px;
+	float:left;
+	background-image: url("../image/emoji4.png");
+	background-size:contain;
+  background-repeat:no-repeat;
+  display:inline-block;
+	padding-left: 0px;
+	padding-right: 20px;
+}
+
+
+
+
+.country:hover{
+  stroke: #fff;
+  stroke-width: 1.5px;
+}
+.text{
+  font-size:10px;
+  text-transform:capitalize;
+}
+#showmap {
+    margin: 10px 10%;
+    border: 1px solid #000;
+    border-radius: 5px;
+    height: 100%;
+    overflow: hidden;
+    background: #FFF9E9;
+}
+.hidden {
+  display: none;
+}
+div.tooltip {
+  color: #222;
+  background: #fff;
+  padding: .5em;
+  text-shadow: #f5f5f5 0 1px 0;
+  border-radius: 2px;
+  box-shadow: 0px 0px 2px 0px #a6a6a6;
+  opacity: 0.9;
+  position: absolute;
+}
+
+
+.graticule {
+  fill: none;
+  stroke: #bbb;
+  stroke-width: .5px;
+  stroke-opacity: .5;
+}
+.equator {
+  stroke: #ccc;
+  stroke-width: 1px;
+}
+#cmap {
+    background: #FFF9E9;
+    border: none;
+    border-radius: 5px;
+    color: #111111;
+    cursor: pointer;
+    font-family: monospace;
+    font-size: 20px;
+    float: right;
+    height: 30px;
+    margin: 8px 0 0;
+    width: 100px;
+}

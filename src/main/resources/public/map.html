@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <link rel="stylesheet" type="text/css" href="stylesheets/style.css">
+
+
+
+  <title> Create My Map </title>
+</head>
+
+<body id ="map">
+<div id = "header">
+  <h1><a href="index.html"> My Travel Map <span>Explore the world</span></a></h1>
+  <ul id="navigation">
+    <li>
+      <a href="index.html">Home</a>
+    </li>
+    <li class = "current">
+      <a href="map.html">Create My Map</a>
+    </li>
+    <li >
+      <a href="mapInfo.html">Write my diary</a>
+    </li>
+    <li >
+      <a href="login.html"> Login</a>
+    </li>
+  </ul>
+</div>
+<div id ="body" >
+<h2><b>Light Up My Map</b></h2>
+<div id="showmap">
+  <script src="http://d3js.org/d3.v3.js"></script>
+  <script src="//d3js.org/d3.geo.projection.v0.min.js"></script>
+  <script src="//d3js.org/topojson.v1.min.js"></script>
+  <script src="js/map.js"></script>
+</div>
+<input type ="button" id ="cmap" name = "cmapy" value ="Create" onClick=createMap()>
+</div>
+</body>
+</html>
