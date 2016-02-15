@@ -4,13 +4,13 @@ function checkSignup(){
    var username2=document.getElementById("username2").value;
    var psw1= document.getElementById("psw").value;
    var psw2=document.getElementById("psw2").value;
-   if(username1=="" || username1 ==null)
+   if(username1==="" || username1 ===null)
    {
       document.getElementById("textUser1").innerHTML="username should not be empty";
       return false;
    }
   else{
-    if(username2==""|| username2==null)
+    if(username2===""|| username2===null)
     {
       document.getElementById("textUser2").innerHTML="you should confirm your username";
       return false;
@@ -21,12 +21,12 @@ function checkSignup(){
       document.getElementById("textUser2").innerHTML="failed to confirm your username ";
       return false;
     }
-    else if(psw=="" || psw==null)
+    else if(psw==="" || psw===null)
     {
       document.getElementById("textPsw1").innerHTML="password should not be empty";
       return false;
     }
-    else if(psw2=="" || psw2==null)
+    else if(psw2==="" || psw2===null)
     {
       document.getElementById("textPsw2").innerHTML="you should confirm your password";
       return false;

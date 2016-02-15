@@ -270,6 +270,15 @@ body {
 	float:left;
 
 }
+#body form.mapInfo #Mood span{
+	display: block;
+	line-height: 27px;
+	padding: 0 0 5px;
+	font-size: 20px;
+	font-family: monospace;
+	color: #434142;
+
+}
 #body form.mapInfo #Mood label{
 	margin: 0;
 	padding: 0;
