@@ -15,7 +15,7 @@ var graticule = d3.geo.graticule();
 
 var tooltip = d3.select("#showmap").append("div").attr("class", "tooltip hidden");
 
-var MName = new Array();
+var MName = [];
 
 //var color = d3.scale.threshold().range(["#ffff99","#ffe680", "#ffd733", "#e6b900", "#ffd1b3", "#ffb280", "#ff934d", "#ff741a", "#ff5b33", "#ff3200","#b32300","#661400"])
 
