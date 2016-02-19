@@ -4,8 +4,10 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width">
   <link rel="stylesheet" type="text/css" href="stylesheets/style.css">
-
-
+  <script src="//d3js.org/d3.geo.projection.v0.min.js"></script>
+  <script src="//d3js.org/topojson.v1.min.js"></script>
+  <script src="http://d3js.org/d3.v3.js"></script>
+  <script src="js/map.js"></script>
 
   <title> Create My Map </title>
 </head>
@@ -31,10 +33,8 @@
 <div id ="body" >
 <h2><b>Light Up My Map</b></h2>
 <div id="showmap">
-  <script src="http://d3js.org/d3.v3.js"></script>
-  <script src="//d3js.org/d3.geo.projection.v0.min.js"></script>
-  <script src="//d3js.org/topojson.v1.min.js"></script>
-  <script src="js/map.js"></script>
+
+
 </div>
 <input type ="button" id ="cmap" name = "cmapy" value ="Create" onClick=createMap()>
 </div>
