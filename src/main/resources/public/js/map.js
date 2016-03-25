@@ -117,7 +117,7 @@ function draw(topo) {
                    d3.select(this)
                    .style("fill","#FF8C00");
                    var id = d.id;
-                   var name = d.name;
+                   var name = d.properties.name;
                    MName.push(id);
                    Mlist.push(name);
                    console.log(MName);
