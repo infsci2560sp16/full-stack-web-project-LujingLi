@@ -23,13 +23,11 @@ public class SignUpServer {
 
         String username = req.params(":name");
         System.out.println(username);
-        String result = "";
+        String result = "true";
         for(int i = 0;i < userlist.length; i++)
         {
           if(userlist[i].equals(username))
             result = "false";
-            else
-            result = "true";
 
 
 
