@@ -21,6 +21,7 @@ public class Main {
         port(Integer.valueOf(System.getenv("PORT")));
         staticFileLocation("/public");
         Object r = new SignUpServer();
+        Object r1 = new DefaultServer();
         get("/hello", (req, res) -> "Hello World");
 
         // get("/", (request, response) -> {
