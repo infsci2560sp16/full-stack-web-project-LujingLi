@@ -87,7 +87,7 @@ $(document).ready(function() {
                    url: "/api/about",
                    success: function (result) {
                        var data = JSON.parse(result);
-                       $("#f1").html(result.name);
+                       $("#f1").html(data.name);
                    }});
            });
     $("#username").on("blur",function(e){

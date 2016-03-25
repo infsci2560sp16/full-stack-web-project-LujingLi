@@ -6,6 +6,7 @@ import java.util.Map;
 import java.util.Date;
 
 import static spark.Spark.get;
+import static spark.Spark.post;
 import spark.Request;
 
 public class DefaultServer {
