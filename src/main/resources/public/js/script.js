@@ -58,15 +58,15 @@ $(document).ready(function() {
 
                 //get the form data using another method
                 var username = $("input#username").val();
-                dataString = "username=" + username+";";
+                //dataString =  username;
 
-                alert(dataString);
+                alert(username);
                 //make the AJAX request, dataType is set to json
                 //meaning we are expecting JSON data in response from the server
                 $.ajax({
-                    type: "POST",
-                    url: "/api/checkuser",
-                    data: dataString,
+                    type: "GET",
+                    url: "/api/checkuser/:name",
+                    data: username,
                     dataType: "json",
 
                     //if received a response from the server
