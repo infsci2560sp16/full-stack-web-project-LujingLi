@@ -34,7 +34,8 @@ public class SignUpServer {
         //return result;
 
           Map<String, Object> data = new HashMap<>();
-          data.put("success", result);
+          //data.put("success", result);
+          data.put("success", username);
 
           return data;
       }, gson::toJson);
