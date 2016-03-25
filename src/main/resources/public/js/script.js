@@ -65,7 +65,7 @@ $(document).ready(function() {
                 //meaning we are expecting JSON data in response from the server
                 $.ajax({
                     type: "GET",
-                    url: "/api/checkuser/:name",
+                    url: "/api/checkuser/"+username,
                     data: username,
                     dataType: "json",
 
