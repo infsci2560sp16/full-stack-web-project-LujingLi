@@ -89,6 +89,7 @@ $(document).ready(function() {
                    success: function (result) {
                        var data = JSON.parse(result);
                        $("#f1").html(data.name);
+                       $("#f2").html(data.Email);
                    }});
            });
     $("#username").on("blur",function(e){
