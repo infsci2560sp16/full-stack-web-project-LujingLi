@@ -22,12 +22,12 @@ public class SignUpServer {
       get("/api/checkuser/:name", (req, res) -> {
 
         String username = req.params(":name");
-          
-        boolean result = true;
+
+        String result = "true";
         for(int i = 0;i < userlist.length; i++)
         {
           if(userlist[i] == username)
-            result = false;
+            result = "false";
 
         }
         //return result;

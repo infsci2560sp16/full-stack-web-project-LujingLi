@@ -73,7 +73,7 @@ $(document).ready(function() {
 
                                             var data = JSON.parse(result);
                                             alert(data[0].value);
-                                            if(data[0].value === false)
+                                            if(data[0].value === "true")
                                             $("#textUser1").html("Username is vaild");
                                             else {
                                               $("#textUser1").html("Username is occupied, please change another username ");
