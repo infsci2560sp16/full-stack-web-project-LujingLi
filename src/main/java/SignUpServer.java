@@ -23,19 +23,22 @@ public class SignUpServer {
 
         String username = req.params(":name");
         System.out.println(username);
-        String result = "true";
+        String result = "";
         for(int i = 0;i < userlist.length; i++)
         {
           if(userlist[i] == username)
-            {result = "false";}
+            result = "false";
+            else
+            result = "true";
+
 
 
         }
         //return result;
 
           Map<String, Object> data = new HashMap<>();
-          //data.put("success", result);
-          data.put("success", username);
+          data.put("success", result);
+
 
           return data;
       }, gson::toJson);
