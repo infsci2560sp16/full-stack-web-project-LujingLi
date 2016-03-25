@@ -4,7 +4,7 @@ import java.util.Map;
 import java.util.Date;
 
 import static spark.Spark.get;
-
+import spark.Request;
 
 public class SignUpServer {
 
@@ -21,6 +21,7 @@ public class SignUpServer {
       get("/api/checkuser", (req, res) -> {
         //console.log(req.params);
         String username = req.params;
+
         //String username =request
           // Map<String, Object> data = new HashMap<>();
           // data.put("title", "Professor");
