@@ -70,8 +70,13 @@ $(document).ready(function() {
                     dataType: "json",
 
                     success: function (result) {
+
                                             var data = JSON.parse(result);
-                                            $("#textUser1").html(result);
+                                            if(data.value == false)
+                                            $("#textUser1").html("Username is vaild");
+                                            else {
+                                              $("#textUser1").html("Username is occupied, please change another username ");
+                                            }
                                           },
                     //if received a response from the server
                     // success: function( data, textStatus, jqXHR) {
