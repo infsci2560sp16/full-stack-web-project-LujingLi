@@ -14,6 +14,7 @@ public class DefaultServer {
     Gson gson = new Gson();
 
     public DefaultServer() {
+      setDefault();
 
     }
     private void setDefault() {
