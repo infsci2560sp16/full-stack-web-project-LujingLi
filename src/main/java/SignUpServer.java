@@ -13,7 +13,7 @@ public class SignUpServer {
     public SignUpServer() {
         checkUser();
     }
-    User user = new User();
+  //  User user = new User();
 // set default userlist
     String [] userlist = {"a","b","c","d"};
 
@@ -30,18 +30,6 @@ public class SignUpServer {
           // data.put("profession", "Education");
           //return data;
       }, gson::toJson);
-
-        get("/api/time/now", (req, res) -> {
-            Map<String, Object> data = new HashMap<>();
-            data.put("currentTime", new Date());
-            return data;
-        }, gson::toJson);
-
-        get("/api/time/now.xml", (req, res) -> {
-            Map<String, Object> data = new HashMap<>();
-            data.put("currentTime", new Date());
-            return data;
-        }, gson::toJson);
 
 
   }
