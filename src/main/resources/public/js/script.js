@@ -82,7 +82,7 @@ $(document).ready(function() {
            e.preventDefault();
     });
     //checks for the button click event
-        $("#username").on("focus",function(e){
+        $("#username").on("blur",function(e){
 
 
                 //get the form data using another method
