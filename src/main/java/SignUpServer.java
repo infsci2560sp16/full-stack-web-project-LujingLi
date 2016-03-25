@@ -20,7 +20,7 @@ public class SignUpServer {
 
     private void checkUser() {
       get("/api/checkuser/:name", (req, res) -> {
-        //console.log(req.params);
+        console.log(req.params);
         String username = req.params(":name");
         boolean result = true;
         for(int i = 0;i < userlist.length; i++)
@@ -29,14 +29,12 @@ public class SignUpServer {
             result = false;
 
         }
-        return result;
-        //String username =request
-          // Map<String, Object> data = new HashMap<>();
-          // data.put("title", "Professor");
-          // data.put("name", "Brian");
-          // data.put("description", "INFSCI 2560");
-          // data.put("profession", "Education");
-          // return data;
+        //return result;
+
+          Map<String, Object> data = new HashMap<>();
+          data.put("success", result);
+          
+          return data;
       }, gson::toJson);
 
 

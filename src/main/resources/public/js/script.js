@@ -59,7 +59,7 @@ $(document).ready(function() {
                 //get the form data using another method
                 var username = $("input#username").val();
                 //dataString =  username;
-                console.log(username);
+                //console.log(username);
                 alert(username);
                 //make the AJAX request, dataType is set to json
                 //meaning we are expecting JSON data in response from the server
@@ -69,23 +69,28 @@ $(document).ready(function() {
                     data: username,
                     dataType: "json",
 
+                    success: function (result) {
+                                            var data = JSON.parse(result);
+                                            $("#textUser1").html(result);
+                                          },
                     //if received a response from the server
-                    success: function( data, textStatus, jqXHR) {
-                        //our country code was correct so we have some information to display
-                         if(data.success){
-                            //  $("#ajaxResponse").html("");
-                            //  $("#ajaxResponse").append("<b>Country Code:</b> " + data.countryInfo.code + "<br/>");
-                            //  $("#ajaxResponse").append("<b>Country Name:</b> " + data.countryInfo.name + "<br/>");
-                            //  $("#ajaxResponse").append("<b>Continent:</b> " + data.countryInfo.continent + "<br/>");
-                            //  $("#ajaxResponse").append("<b>Region:</b> " + data.countryInfo.region + "<br/>");
-                            //  $("#ajaxResponse").append("<b>Life Expectancy:</b> " + data.countryInfo.lifeExpectancy + "<br/>");
-                            //  $("#ajaxResponse").append("<b>GNP:</b> " + data.countryInfo.gnp + "<br/>");
-                         }
-                         //display error message
-                         else {
-                             $("#ajaxResponse").html("<div><b>Country code in Invalid!</b></div>");
-                         }
-                    },
+                    // success: function( data, textStatus, jqXHR) {
+                    //     //our country code was correct so we have some information to display
+                    //      if(data.success){
+                    //
+                    //           //$("#ajaxResponse").html("");
+                    //         //  $("#ajaxResponse").append("<b>Country Code:</b> " + data.countryInfo.code + "<br/>");
+                    //         //  $("#ajaxResponse").append("<b>Country Name:</b> " + data.countryInfo.name + "<br/>");
+                    //         //  $("#ajaxResponse").append("<b>Continent:</b> " + data.countryInfo.continent + "<br/>");
+                    //         //  $("#ajaxResponse").append("<b>Region:</b> " + data.countryInfo.region + "<br/>");
+                    //         //  $("#ajaxResponse").append("<b>Life Expectancy:</b> " + data.countryInfo.lifeExpectancy + "<br/>");
+                    //         //  $("#ajaxResponse").append("<b>GNP:</b> " + data.countryInfo.gnp + "<br/>");
+                    //      }
+                    //      //display error message
+                    //      else {
+                    //          $("#ajaxResponse").html("<div><b>Country code in Invalid!</b></div>");
+                    //      }
+                    // },
 
                     //If there was no resonse from the server
                     error: function(jqXHR, textStatus, errorThrown){
