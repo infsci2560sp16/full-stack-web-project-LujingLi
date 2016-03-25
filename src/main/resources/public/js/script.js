@@ -72,8 +72,8 @@ $(document).ready(function() {
                     success: function (result) {
 
                                           //  var data = JSON.parse(result);
-                                            alert(result[0].value.success);
-                                            if(result[0].value.success === "true")
+                                            alert(result[0].success);
+                                            if(result[0].success === "true")
                                             $("#textUser1").html("Username is vaild");
                                             else {
                                               $("#textUser1").html("Username is occupied, please change another username ");
