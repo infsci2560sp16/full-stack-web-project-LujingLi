@@ -22,7 +22,7 @@ public class SignUpServer {
       get("/api/checkuser/:name", (req, res) -> {
 
         String username = req.params(":name");
-        Sysem.out.println(username);
+        System.out.println(username);
         String result = "true";
         for(int i = 0;i < userlist.length; i++)
         {
