@@ -84,6 +84,7 @@ $(document).ready(function() {
     // add footer content
     $(function () {
                $.ajax({
+                  type:"POST",
                    url: "/api/about",
                    success: function (result) {
                        var data = JSON.parse(result);
