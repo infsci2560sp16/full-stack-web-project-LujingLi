@@ -26,7 +26,7 @@ public class SignUpServer {
         String result = "";
         for(int i = 0;i < userlist.length; i++)
         {
-          if(userlist[i] == username)
+          if(userlist[i].equals(username))
             result = "false";
             else
             result = "true";
