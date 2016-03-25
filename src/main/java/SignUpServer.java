@@ -27,7 +27,7 @@ public class SignUpServer {
         for(int i = 0;i < userlist.length; i++)
         {
           if(userlist[i] == username)
-            result = "false";
+            {result = "false";}
 
         }
         //return result;
