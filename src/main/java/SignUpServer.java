@@ -19,7 +19,7 @@ public class SignUpServer {
 
     private void checkUser() {
       get("/api/checkuser", (req, res) -> {
-        console.log(req.params)
+        console.log(req.params);
         //String username =request
           // Map<String, Object> data = new HashMap<>();
           // data.put("title", "Professor");
