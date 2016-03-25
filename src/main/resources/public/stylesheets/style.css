@@ -205,35 +205,85 @@ body {
 	resize: none;
 	width: 448px;
 }
-#body form.mapInfo input#ADate {
+
+#body form.mapInfo input#ADateMonth {
     background: #d1d3d4;
     border: 1px solid #d1d3d4;
     color: #434142;
-    display: block;
+    display: inline;;
     font-family: monospace;
     font-size: 15px;
     height: 40px;
     line-height: 46px;
     padding: 0 5px;
-    width: 150px;
+    width: 17%;
 }
-#body form.mapInfo input#LDate {
+#body form.mapInfo input#ADateDay {
     background: #d1d3d4;
     border: 1px solid #d1d3d4;
     color: #434142;
-    display: block;
+    display: inline;
     font-family: monospace;
     font-size: 15px;
     height: 40px;
     line-height: 46px;
     padding: 0 5px;
-    width: 150px;
+    width: 17%;
 }
+#body form.mapInfo input#ADateYear {
+    background: #d1d3d4;
+    border: 1px solid #d1d3d4;
+    color: #434142;
+    display: inline;
+    font-family: monospace;
+    font-size: 15px;
+    height: 40px;
+    line-height: 46px;
+    padding: 0 5px;
+    width: 17%;
+}
+#body form.mapInfo input#LDateMonth {
+    background: #d1d3d4;
+    border: 1px solid #d1d3d4;
+    color: #434142;
+    display: inline;;
+    font-family: monospace;
+    font-size: 15px;
+    height: 40px;
+    line-height: 46px;
+    padding: 0 5px;
+    width: 17%;
+}
+#body form.mapInfo input#LDateDay {
+    background: #d1d3d4;
+    border: 1px solid #d1d3d4;
+    color: #434142;
+    display: inline;
+    font-family: monospace;
+    font-size: 15px;
+    height: 40px;
+    line-height: 46px;
+    padding: 0 5px;
+    width: 17%;
+}
+#body form.mapInfo input#LDateYear {
+    background: #d1d3d4;
+    border: 1px solid #d1d3d4;
+    color: #434142;
+    display: inline;
+    font-family: monospace;
+    font-size: 15px;
+    height: 40px;
+    line-height: 46px;
+    padding: 0 5px;
+    width: 17%;
+}
+
 #body form.mapInfo input{
 	background: #d1d3d4;
 	border: 1px solid #d1d3d4;
 	color: #434142;
-	display: block;
+	display: inline;
 	font-family: monospace;
 	font-size: 20px;
 	height: 35px;
@@ -245,16 +295,16 @@ body {
 #body form.mapInfo #Adate{
 	margin: 0 auto 0;
 	overflow: hidden;
-	width: 200px;
+	width: 460px;
 	position: absolute;
-	float: left;
+
 	position: relative;
 }
 #body form.mapInfo #Ldate{
 	margin: 0 auto 0;
 	overflow: hidden;
-	width: 200px;
-	float: right;
+	width: 460px;
+
 }
 #body form.mapInfo #diary{
 	margin: 0 auto 0;
@@ -391,6 +441,16 @@ div.tooltip {
     height: 30px;
     margin: 8px 0 0;
     width: 100px;
+}
+
+#countrySum {
+	margin: 10px 10%;
+	border: 1px solid #000;
+	width: 841px;
+	display: block;
+	height: 40px;
+	display: inline-block;
+	background: #FFF9E9;
 }
 footer {
 	color: #ff9933;
