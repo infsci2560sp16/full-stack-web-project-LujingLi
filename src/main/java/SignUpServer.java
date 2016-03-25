@@ -28,16 +28,11 @@ public class SignUpServer {
         {
           if(userlist[i].equals(username))
             result = "false";
-
-
-
         }
         //return result;
 
           Map<String, Object> data = new HashMap<>();
           data.put("success", result);
-
-
           return data;
       }, gson::toJson);
 
