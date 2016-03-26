@@ -135,7 +135,9 @@ function draw(topo) {
                       success: function (result) {
 
                                 console.log(result);
-                                alert(result);
+                                var cname = $(result).find("name").first().text();
+                                alert(cname);
+
                                               //alert(result.success);
                                               // if(result.success === "true")
                                               // $("#textUser1").html("Username is vaild");
