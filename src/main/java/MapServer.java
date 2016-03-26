@@ -49,7 +49,7 @@ public class MapServer {
                               "<Country>" +
                                   "<name>"+country.getcName()+"</name>" +
                                   "<population>"+country.getPopulation()+"</populatino>" +
-                                  "<continent>"+country.getContinent()+"</continet>" +
+                                  "<continent>"+country.getContinent()+"</continent>" +
                                   "<capital>"+country.getCapital()+"</capital>" +
                                   "<language>"+country.getLanguage()+"</language>" +
                                   "<currency>"+country.getCurrency()+"</currency>" +
