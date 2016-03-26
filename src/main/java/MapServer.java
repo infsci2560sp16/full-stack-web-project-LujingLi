@@ -43,7 +43,7 @@ public class MapServer {
 
        String xml = "";
        try {
-       if(null == country)
+       if(null != country)
        {
           xml =    "<?xml version=\"1.0\" encoding=\"UTF-8\"?>" +
                               "<Country>" +
