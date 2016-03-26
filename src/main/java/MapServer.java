@@ -5,6 +5,7 @@ import java.util.Date;
 import static spark.Spark.get;
 import spark.Request;
 public class MapServer {
+
   public MapServer(){
   //  CreateSampleData();
     getCountryInfo();
@@ -40,9 +41,10 @@ public class MapServer {
 
        }
        res.type("text/xml");
+       String xml = "";
        if(!country.equals(null))
        {
-         String xml =    "<?xml version=\"1.0\" encoding=\"UTF-8\"?>" +
+          xml =    "<?xml version=\"1.0\" encoding=\"UTF-8\"?>" +
                               "<Country>" +
                                   "<name>"+country.getcName()+"</name>" +
                                   "<population>"+country.getPopulation()+"</populatino>" +
@@ -58,7 +60,7 @@ public class MapServer {
        }
       else
       {
-        String xml =    "<?xml version=\"1.0\" encoding=\"UTF-8\"?>" +
+         xml =    "<?xml version=\"1.0\" encoding=\"UTF-8\"?>" +
                              "<Country>" +
                                  "<name>information is not available yet</name>" +
                                  "<population>information is not available yet</populatino>" +
@@ -73,7 +75,7 @@ public class MapServer {
                              "</Country>";
       }
       return xml;
-
+ });
 
 
   }
