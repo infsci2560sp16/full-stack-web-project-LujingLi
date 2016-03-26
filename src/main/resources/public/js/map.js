@@ -155,14 +155,7 @@ function draw(topo) {
                                                       "<p>Point of Interest: "+poi2+";</p>"+
                                                       "<p>Point of Interest: "+poi3+";</p>"+
                                                       "<p>Point of Interest: "+poi4+";</p>");
-                              
 
-                                              //alert(result.success);
-                                              // if(result.success === "true")
-                                              // $("#textUser1").html("Username is vaild");
-                                              // else {
-                                              //   $("#textUser1").html("Username is occupied, please change another username ");
-                                              // }
                                             },
 
                       //If there was no resonse from the server
