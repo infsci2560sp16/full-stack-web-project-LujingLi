@@ -20,24 +20,24 @@ public class SignUpServer {
 
     private void checkUser() {
       get("/api/checkuser/:name", (req, res) -> {
-        try {
+        String result = "true";
+      try {
         String username = req.params(":name");
         System.out.println(username);
-        String result = "true";
+
         for(int i = 0;i < userlist.length; i++)
         {
           if(userlist[i].equals(username))
             result = "false";
         }
+      }catch (NullPointerException e) {
+            System.out.println("Object=null");
+     }
         //return result;
-
-
           Map<String, Object> data = new HashMap<>();
           data.put("success", result);
           return data;
-           }catch (NullPointerException e) {
-   				System.out.println("Object=null");
-   				}
+
       }, gson::toJson);
 
 
