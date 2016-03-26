@@ -136,7 +136,7 @@ function draw(topo) {
 
                                 console.log(result);
                                 var cname = $(result).find("name").first().text();
-                                if(!cname.equals("information is not available yet"))
+                                if(cname !="information is not available yet")
                                 {
                                 var population = $(result).find("population").first().text();
                                 var continent = $(result).find("continent").first().text();
