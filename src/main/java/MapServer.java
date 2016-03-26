@@ -29,7 +29,7 @@ public class MapServer {
       String name = req.params(":name");
       HashMap<String,CountryInfo> countryList = new HashMap<>();
       countryList = CreateSampleData();
-      CountryList country = new CountryList();
+      CountryListInfo country = new CountryListInfo();
        if(!countryList.containsKey(name))
        {
 
