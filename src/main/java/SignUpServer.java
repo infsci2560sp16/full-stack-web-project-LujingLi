@@ -20,7 +20,7 @@ public class SignUpServer {
 
     private void checkUser() {
       get("/api/checkuser/:name", (req, res) -> {
-
+        try {
         String username = req.params(":name");
         System.out.println(username);
         String result = "true";
@@ -31,9 +31,13 @@ public class SignUpServer {
         }
         //return result;
 
+
           Map<String, Object> data = new HashMap<>();
           data.put("success", result);
           return data;
+           }catch (NullPointerException e) {
+   				System.out.println("Object=null");
+   				}
       }, gson::toJson);
 
 

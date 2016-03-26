@@ -64,14 +64,10 @@ public class MapServer {
          xml =    "<?xml version=\"1.0\" encoding=\"UTF-8\"?>" +
                              "<Country>" +
                               "<name>information is not available yet</name>" +
-                                
+
                              "</Country>";
       }
-    // }
-    //  catch (NullPointerException e)
-    //  {
-		// 		System.out.println("Object=null");
-		// }
+    
       res.type("text/xml");
       return xml;
  });
