@@ -45,7 +45,7 @@ public class MapServer {
        try {
        if(null != country)
        {
-          xml =    "<?xml version=\"1.0\" encoding=\"UTF-8\"?>" +
+          xml = "<?xml version=\"1.0\" encoding=\"UTF-8\"?>" +
                               "<Country>" +
                                   "<name>"+country.getcName()+"</name>" +
                                   "<population>"+country.getPopulation()+"</populatino>" +
