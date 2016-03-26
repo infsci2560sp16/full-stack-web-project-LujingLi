@@ -135,6 +135,7 @@ function draw(topo) {
                       success: function (result) {
 
                                 console.log(result);
+                                alert(result);
                                               //alert(result.success);
                                               // if(result.success === "true")
                                               // $("#textUser1").html("Username is vaild");
@@ -147,7 +148,7 @@ function draw(topo) {
                       error: function(jqXHR, textStatus, errorThrown){
                            console.log("Something really bad happened " + textStatus);
                             $("#countrySum").html(jqXHR.responseText);
-                            alert(jqXHR.responseText);
+                            alert(jqXHR.status);
                       }
 
 

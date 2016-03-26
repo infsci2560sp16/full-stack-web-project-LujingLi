@@ -48,7 +48,7 @@ public class MapServer {
           xml = "<?xml version=\"1.0\" encoding=\"UTF-8\"?>" +
                               "<Country>" +
                                   "<name>"+country.getcName()+"</name>" +
-                                  "<population>"+country.getPopulation()+"</populatino>" +
+                                  "<population>"+country.getPopulation()+"</population>" +
                                   "<continent>"+country.getContinent()+"</continent>" +
                                   "<capital>"+country.getCapital()+"</capital>" +
                                   "<language>"+country.getLanguage()+"</language>" +
