@@ -40,7 +40,7 @@ public class MapServer {
           country = countryList.get(name);
 
        }
-       res.type("text/xml");
+
        String xml = "";
        if(!country.equals(null))
        {
@@ -74,6 +74,7 @@ public class MapServer {
                                  "<poi4>information is not available yet</poi4>" +
                              "</Country>";
       }
+      res.type("text/xml");
       return xml;
  });
 

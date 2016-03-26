@@ -22,6 +22,7 @@ public class Main {
         staticFileLocation("/public");
         Object r = new SignUpServer();
         Object r1 = new DefaultServer();
+        Object r2 = new MapServer();
         get("/hello", (req, res) -> "Hello World");
 
         // get("/", (request, response) -> {
