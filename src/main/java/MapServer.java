@@ -42,7 +42,8 @@ public class MapServer {
        }
 
        String xml = "";
-       if(!country.equals(null))
+       try {
+       if(null == country)
        {
           xml =    "<?xml version=\"1.0\" encoding=\"UTF-8\"?>" +
                               "<Country>" +
@@ -63,7 +64,7 @@ public class MapServer {
          xml =    "<?xml version=\"1.0\" encoding=\"UTF-8\"?>" +
                              "<Country>" +
                                  "<name>information is not available yet</name>" +
-                                 "<population>information is not available yet</populatino>" +
+                                 "<population>information is not available yet</population>" +
                                  "<continent>information is not available yet</continet>" +
                                  "<capital>information is not available yet</capital>" +
                                  "<language>information is not available yet</language>" +
@@ -74,6 +75,11 @@ public class MapServer {
                                  "<poi4>information is not available yet</poi4>" +
                              "</Country>";
       }
+    }
+     catch (NullPointerException e)
+     {
+				System.out.println("Object=null");
+		}
       res.type("text/xml");
       return xml;
  });
