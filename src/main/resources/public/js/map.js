@@ -136,7 +136,26 @@ function draw(topo) {
 
                                 console.log(result);
                                 var cname = $(result).find("name").first().text();
-                                alert(cname);
+                                var population = $(result).find("population").first().text();
+                                var continent = $(result).find("continent").first().text();
+                                var capital = $(result).find("capital").first().text();
+                                var language = $(result).find("language").first().text();
+                                var currency = $(result).find("currency").first().text();
+                                var poi1 = $(result).find("poi1").first().text();
+                                var poi2 = $(result).find("poi2").first().text();
+                                var poi3 = $(result).find("poi3").first().text();
+                                var poi4 = $(result).find("poi4").first().text();
+                                $("#countrySum").html("Description: <p>Country Name: "+cname+";</p>"+
+                                                      "<p>Population: "+population+";</p>"+
+                                                      "<p>Continent: "+continent+";</p>"+
+                                                      "<p>Capital: "+capital+";</p>"+
+                                                      "<p>Language: "+language+";</p>"+
+                                                      "<p>Currency: "+currency+";</p>"+
+                                                      "<p>Point of Interest: "+poi1+";</p>"+
+                                                      "<p>Point of Interest: "+poi2+";</p>"+
+                                                      "<p>Point of Interest: "+poi3+";</p>"+
+                                                      "<p>Point of Interest: "+poi4+";</p>");
+                              
 
                                               //alert(result.success);
                                               // if(result.success === "true")
