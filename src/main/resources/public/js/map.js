@@ -136,6 +136,8 @@ function draw(topo) {
 
                                 console.log(result);
                                 var cname = $(result).find("name").first().text();
+                                if(!cname.equals("information is not available yet"))
+                                {
                                 var population = $(result).find("population").first().text();
                                 var continent = $(result).find("continent").first().text();
                                 var capital = $(result).find("capital").first().text();
@@ -155,6 +157,10 @@ function draw(topo) {
                                                       "<p>Point of Interest: "+poi2+";</p>"+
                                                       "<p>Point of Interest: "+poi3+";</p>"+
                                                       "<p>Point of Interest: "+poi4+";</p>");
+                                }else{
+                                  $("#countrySum").html("Description: <p>"+cname+"</p>");
+
+                                }
 
                                             },
 
@@ -162,7 +168,7 @@ function draw(topo) {
                       error: function(jqXHR, textStatus, errorThrown){
                            console.log("Something really bad happened " + textStatus);
                             $("#countrySum").html(jqXHR.responseText);
-                            alert(jqXHR.status);
+
                       }
 
 

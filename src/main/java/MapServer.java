@@ -63,16 +63,8 @@ public class MapServer {
       {
          xml =    "<?xml version=\"1.0\" encoding=\"UTF-8\"?>" +
                              "<Country>" +
-                                 "<name>information is not available yet</name>" +
-                                 "<population>information is not available yet</population>" +
-                                 "<continent>information is not available yet</continet>" +
-                                 "<capital>information is not available yet</capital>" +
-                                 "<language>information is not available yet</language>" +
-                                 "<currency>information is not available yet</currency>" +
-                                 "<poi1>information is not available yet</poi1>" +
-                                 "<poi2>information is not available yet</poi2>" +
-                                 "<poi3>information is not available yet</poi3>" +
-                                 "<poi4>information is not available yet</poi4>" +
+                              "<name>information is not available yet</name>" +
+                                
                              "</Country>";
       }
     // }
