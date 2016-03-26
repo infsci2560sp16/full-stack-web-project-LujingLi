@@ -42,7 +42,7 @@ public class MapServer {
        }
 
        String xml = "";
-       try {
+      // try {
        if(null != country)
        {
           xml = "<?xml version=\"1.0\" encoding=\"UTF-8\"?>" +
@@ -75,11 +75,11 @@ public class MapServer {
                                  "<poi4>information is not available yet</poi4>" +
                              "</Country>";
       }
-    }
-     catch (NullPointerException e)
-     {
-				System.out.println("Object=null");
-		}
+    // }
+    //  catch (NullPointerException e)
+    //  {
+		// 		System.out.println("Object=null");
+		// }
       res.type("text/xml");
       return xml;
  });
