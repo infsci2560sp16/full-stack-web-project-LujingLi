@@ -43,36 +43,7 @@ function checkSignup(){
   }
 
 }
-// ajax function for sign up
-// function checkUsername()
-// {
-//   var username = $("input#username").val();
-//   $.ajax({
-//       type: "GET",
-//       url: "/api/checkuser/"+username,
-//       data: username,
-//       dataType: "json",
-//
-//       success: function (result) {
-//
-//
-//                               //alert(result.success);
-//                               if(result.success === "true")
-//                               $("#textUser1").html("Username is vaild");
-//                               else {
-//                                 $("#textUser1").html("Username is occupied, please change another username ");
-//                               }
-//                             },
-//       error: function(jqXHR, textStatus, errorThrown){
-//                               console.log("Something really bad happened " + textStatus);
-//                               $("#ajaxResponse").html(jqXHR.responseText);
-//                             }
-//     });
-//
-// }
-//
-//
-//
+
 
 
 $(document).ready(function() {

@@ -106,7 +106,7 @@ function draw(topo) {
 
       tooltip.classed("hidden", false)
             .style("left", (d3.event.pageX+20) + "px")
-             .style("top", (d3.event.pageY - 28) + "px")
+            .style("top", (d3.event.pageY - 28) + "px")
              //.attr("style", "left:"+(mouse[0]+offsetL)+"px;top:"+(mouse[1]+offsetT)+"px")
              .html(d.properties.name + "<br/>" + "Have been there? " +'<a href= "mapInfo.html">' +" Write a diray" +
         "</a>" );
@@ -124,7 +124,41 @@ function draw(topo) {
                    console.log(Mlist);
                   // alert(MName);
 
+                  //ajax
+
+                  $.ajax({
+                      type: "GET",
+                      url: "/api/mapInfo/"+name,
+                      data: name,
+                      dataType: "xml",
+
+                      success: function (result) {
+
+
+                                              //alert(result.success);
+                                              // if(result.success === "true")
+                                              // $("#textUser1").html("Username is vaild");
+                                              // else {
+                                              //   $("#textUser1").html("Username is occupied, please change another username ");
+                                              // }
+                                            },
+
+                      //If there was no resonse from the server
+                      error: function(jqXHR, textStatus, errorThrown){
+                           console.log("Something really bad happened " + textStatus);
+                            $("#ajaxResponse").html(jqXHR.responseText);
+                      }
+
+
+
+                  });
+
+
          });
+
+
+
+
 
 }
 
@@ -173,6 +207,12 @@ function throttle() {
       redraw();
     }, 200);
 }
+
+// ajax
+
+
+
+
 
 
 // mouse click
