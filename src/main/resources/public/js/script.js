@@ -53,16 +53,31 @@ $(document).ready(function() {
            e.preventDefault();
     });
     // add footer content
-    $(function () {
-               $.ajax({
-                  type:"POST",
-                   url: "/api/about",
-                   success: function (result) {
-                       var data = JSON.parse(result);
-                       $("#f1").html(data.name);
-                       $("#f2").html(data.Email);
-                   }});
-           });
+    // $(function () {
+    //            $.ajax({
+    //               type:"POST",
+    //                url: "/api/about",
+    //                success: function (result) {
+    //                    var data = JSON.parse(result);
+    //                    $("#f1").html(data.name);
+    //                    $("#f2").html(data.Email);
+    //                }});
+    //        });
+
+           $("#showdesigner").on("click", function () {
+                      $.ajax({
+                         type:"POST",
+                          url: "/api/about",
+                          success: function (result) {
+                              var data = JSON.parse(result);
+                              $("#f1").html(data.name);
+                              $("#f2").html(data.Email);
+                          }});
+                  });
+
+
+
+
     $("#username").on("blur",function(e){
 
 
@@ -96,5 +111,14 @@ $(document).ready(function() {
 
                 });
         });
+
+
+
+
+
+
+
+
+
 
     });
