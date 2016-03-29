@@ -13,11 +13,11 @@ import java.text.SimpleDateFormat;
 import static spark.Spark.get;
 
 
-public class userinfo {
+public class Userinfo {
 
     Gson gson = new Gson();
 
-    public userinfo() {
+    public Userinfo() {
         getUserinfo();
     }
 

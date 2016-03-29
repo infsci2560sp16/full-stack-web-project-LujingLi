@@ -23,7 +23,7 @@ public class Main {
         Object r = new SignUpServer();
         Object r1 = new DefaultServer();
         Object r2 = new MapServer();
-        Object r3 = new userinfo();
+        Object r3 = new Userinfo();
         get("/hello", (req, res) -> "Hello World");
 
         // get("/", (request, response) -> {
