@@ -23,7 +23,7 @@
       <a href="login.html"> Login</a>
     </li>
     <li class = "current">
-      <a href="userpage.ftl"> Login</a>
+      <a href="userpage.ftl"> Personal page</a>
     </li>
   </ul>
 </div>
