@@ -23,7 +23,7 @@ public class userinfo {
 
     private void getUserinfo() {
             String country [] = {"China","United States"};
-            get("/userinfo", (req, res) -> {
+            get("userinfo", (req, res) -> {
 
                 Map<String, Object> attributes = new HashMap<>();
                 attributes.put("username","User1");
