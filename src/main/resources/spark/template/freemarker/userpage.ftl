@@ -4,15 +4,13 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width">
   <link rel="stylesheet" type="text/css" href="stylesheets/style.css">
-  <title> My travel Map </title>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
-  <script src="js/script.js"></script>
+  <title> User Page </title>
 </head>
 <body>
 <div id = "header">
   <h1><a href="index.html"> My Travel Map <span>Explore the world</span></a></h1>
   <ul id="navigation">
-    <li class="current">
+    <li >
       <a href="index.html">Home</a>
     </li>
     <li>
@@ -21,20 +19,30 @@
     <li>
       <a href="mapInfo.html">Write my diary</a>
     </li>
-    <li>
+    <li >
       <a href="login.html"> Login</a>
+    </li>
+    <li class = "current">
+      <a href="userpage.ftl"> Login</a>
     </li>
   </ul>
 </div>
 <div id="body">
-  <img src="image/image1.jpg" class="figure" alt="background">
+
+  	<h2><b>Hello, ${username}</b></h2>
+    <#if country == "">
+    <div id ="userinfo">You haven't marked any location yet!</div>
+    <#else >
+
+    <ul>
+      <# list countries as country>
+      <li> ${country}</li>
+    </ul>
+
+      </#list>
+    </div>
+    </#if>
 </div>
-<footer id ="footer">
-  <p id = "showdesigner">Click to show the designer information</p>
 
-  Design by: <span id ="f1"></span> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Email:<span id ="f2"> </span>
-
-</footer>
 </body>
-
 </html>

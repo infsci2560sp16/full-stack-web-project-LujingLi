@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="Country">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="name" type="xs:string"/></xs:element>
+        <xs:element name="population" type="xs:string"></xs:element>
+        <xs:element name="continent" type="xs:string"/></xs:element>
+        <xs:element name="capital" type="xs:string"></xs:element>
+        <xs:element name="language" type="xs:string"/></xs:element>
+        <xs:element name="currency" type="xs:string"></xs:element>
+        <xs:element name="poi1" type="xs:string"/></xs:element>
+        <xs:element name="poi2" type="xs:string"></xs:element>
+        <xs:element name="poi3" type="xs:string"/></xs:element>
+        <xs:element name="poi4" type="xs:string"></xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
