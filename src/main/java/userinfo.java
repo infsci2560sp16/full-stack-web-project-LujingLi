@@ -29,7 +29,7 @@ public class userinfo {
                 attributes.put("username","User1");
                 attributes.put("countries",country);
 
-                return new ModelAndView(attributes, "/userpage.ftl");
+                return new ModelAndView(attributes, "userpage.ftl");
               }, new FreeMarkerEngine());
     }
 
