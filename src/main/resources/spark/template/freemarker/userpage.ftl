@@ -30,7 +30,7 @@
 <div id="body">
 
   	<h2><b>Hello, ${username}</b></h2>
-    <#if country == "">
+    <#if country ??>
     <div id ="userinfo">You haven't marked any location yet!</div>
     <#else >
 
